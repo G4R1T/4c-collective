@@ -3,170 +3,137 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="description" content="4C - Lead Intake & Follow-Up Systems. Streamline your lead management with our comprehensive intake and follow-up solutions." />
+  <meta name="theme-color" content="#0f766e" />
+  
+  <!-- Open Graph Meta Tags for Social Sharing -->
+  <meta property="og:title" content="4C | Lead Intake & Follow-Up Systems" />
+  <meta property="og:description" content="Streamline your lead management with our comprehensive intake and follow-up solutions." />
+  <meta property="og:type" content="website" />
+  
   <title>4C | Lead Intake & Follow-Up Systems</title>
-  <style>
-    * { margin: 0; padding: 0; box-sizing: border-box; }
-    html { scroll-behavior: smooth; }
-    body {
-      font-family: "Segoe UI", Arial, sans-serif;
-      color: #1f2933;
-      background: #f8fafc;
-      line-height: 1.6;
-    }
-    a { text-decoration: none; color: inherit; }
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+  <!-- Navigation -->
+  <nav>
+    <div class="logo">4C Systems</div>
+    <button class="nav-cta" aria-label="Get started with 4C Systems">Get Started</button>
+  </nav>
 
-    nav {
-      display: flex;
-      justify-content: space-between;
-      align-items: center;
-      padding: 18px 40px;
-      background: #ffffff;
-      box-shadow: 0 2px 12px rgba(15, 23, 42, 0.08);
-      position: sticky;
-      top: 0;
-      z-index: 100;
-    }
-    .logo {
-      font-size: 1.3rem;
-      font-weight: 800;
-      letter-spacing: 0.08em;
-      color: #0f766e;
-    }
-    .nav-cta {
-      background: #0f766e;
-      color: #ffffff;
-      padding: 10px 20px;
-      border-radius: 999px;
-      font-weight: 600;
-      transition: 0.25s ease;
-    }
-    .nav-cta:hover { background: #115e59; }
+  <!-- Hero Section -->
+  <section class="hero">
+    <div class="hero-inner">
+      <span class="eyebrow">Lead Management Solution</span>
+      <h1>Transform Your <span>Lead Intake</span> Process</h1>
+      <p>
+        Automate lead capture, streamline follow-ups, and convert prospects into customers 
+        with our intelligent lead management system.
+      </p>
+      <div class="hero-btns">
+        <button class="btn-primary" aria-label="Start your free trial">Start Free Trial</button>
+        <button class="btn-secondary" aria-label="View product demo">Watch Demo</button>
+      </div>
+    </div>
+  </section>
 
-    .hero {
-      background: linear-gradient(135deg, #effcf9 0%, #f8fafc 55%, #ecfeff 100%);
-      padding: 110px 24px 90px;
-      text-align: center;
-    }
-    .hero-inner {
-      max-width: 900px;
-      margin: 0 auto;
-    }
-    .eyebrow {
-      display: inline-block;
-      margin-bottom: 18px;
-      padding: 8px 14px;
-      border-radius: 999px;
-      background: #ccfbf1;
-      color: #0f766e;
-      font-size: 0.9rem;
-      font-weight: 700;
-      letter-spacing: 0.04em;
-    }
-    .hero h1 {
-      font-size: clamp(2.2rem, 5vw, 4.2rem);
-      line-height: 1.08;
-      font-weight: 800;
-      color: #102a43;
-      margin-bottom: 18px;
-    }
-    .hero h1 span { color: #0f766e; }
-    .hero p {
-      font-size: 1.1rem;
-      color: #486581;
-      max-width: 720px;
-      margin: 0 auto 34px;
-    }
-    .hero-btns {
-      display: flex;
-      gap: 14px;
-      justify-content: center;
-      flex-wrap: wrap;
-    }
-    .btn-primary, .btn-secondary {
-      display: inline-block;
-      padding: 15px 28px;
-      border-radius: 999px;
-      font-size: 1rem;
-      font-weight: 700;
-      transition: 0.25s ease;
-    }
-    .btn-primary {
-      background: #0f766e;
-      color: #ffffff;
-      box-shadow: 0 12px 24px rgba(15, 118, 110, 0.18);
-    }
-    .btn-primary:hover {
-      background: #115e59;
-      transform: translateY(-2px);
-    }
-    .btn-secondary {
-      border: 2px solid #0f766e;
-      color: #0f766e;
-      background: transparent;
-    }
-    .btn-secondary:hover {
-      background: #e6fffb;
-    }
+  <!-- Stats Section -->
+  <section class="stats">
+    <div class="stat">
+      <h2>98%</h2>
+      <p>Lead Capture Rate</p>
+    </div>
+    <div class="stat">
+      <h2>3x</h2>
+      <p>Faster Follow-ups</p>
+    </div>
+    <div class="stat">
+      <h2>250K+</h2>
+      <p>Leads Managed Daily</p>
+    </div>
+  </section>
 
-    .stats {
-      display: grid;
-      grid-template-columns: repeat(3, minmax(180px, 1fr));
-      gap: 20px;
-      max-width: 1080px;
-      margin: -36px auto 0;
-      padding: 0 24px;
-      position: relative;
-      z-index: 2;
-    }
-    .stat {
-      background: #ffffff;
-      border-radius: 22px;
-      padding: 28px 20px;
-      text-align: center;
-      box-shadow: 0 10px 30px rgba(15, 23, 42, 0.08);
-      border: 1px solid #e6edf3;
-    }
-    .stat h2 {
-      font-size: 2rem;
-      color: #0f766e;
-      margin-bottom: 6px;
-    }
-    .stat p {
-      color: #52606d;
-      font-size: 0.98rem;
-    }
+  <!-- Features Section -->
+  <section class="section">
+    <div class="section-inner">
+      <h2>Core Features</h2>
+      <p class="section-sub">
+        Everything you need to manage leads efficiently and close more deals
+      </p>
+      
+      <div class="cards">
+        <div class="card">
+          <div class="card-number">01</div>
+          <h3>Automated Intake</h3>
+          <p>Capture leads from multiple channels automatically and organize them in real-time.</p>
+        </div>
+        
+        <div class="card">
+          <div class="card-number">02</div>
+          <h3>Smart Follow-ups</h3>
+          <p>Set up intelligent follow-up sequences based on lead behavior and engagement.</p>
+        </div>
+        
+        <div class="card">
+          <div class="card-number">03</div>
+          <h3>Analytics Dashboard</h3>
+          <p>Track conversion rates, response times, and lead quality metrics in real-time.</p>
+        </div>
+        
+        <div class="card">
+          <div class="card-number">04</div>
+          <h3>Team Collaboration</h3>
+          <p>Assign leads to team members and track progress across your entire organization.</p>
+        </div>
+      </div>
+    </div>
+  </section>
 
-    .section {
-      padding: 90px 24px;
-    }
-    .section-inner {
-      max-width: 1120px;
-      margin: 0 auto;
-    }
-    .section h2 {
-      font-size: clamp(1.8rem, 4vw, 2.8rem);
-      text-align: center;
-      color: #102a43;
-      margin-bottom: 14px;
-    }
-    .section-sub {
-      text-align: center;
-      color: #61758a;
-      max-width: 760px;
-      margin: 0 auto 48px;
-      font-size: 1.05rem;
-    }
+  <!-- CTA Section -->
+  <section class="section" style="background: linear-gradient(135deg, #effcf9 0%, #f8fafc 55%, #ecfeff 100%);">
+    <div class="section-inner">
+      <h2>Ready to Transform Your Lead Management?</h2>
+      <p class="section-sub">
+        Join hundreds of companies that have improved their lead conversion rates with 4C Systems
+      </p>
+      <div style="text-align: center;">
+        <button class="btn-primary" aria-label="Start your free trial today">Start Your Free Trial Today</button>
+      </div>
+    </div>
+  </section>
 
-    .cards {
-      display: grid;
-      grid-template-columns: repeat(4, minmax(0, 1fr));
-      gap: 20px;
-    }
-    .card {
-      background: #ffffff;
-      padding: 28px 22px;
-      border-radius: 22px;
-      box-shadow: 0 12px 30px rgba(15, 23, 42, 0.06);
-      border: 1px solid #e6edf3;
-    }
-    .card-numb
+  <!-- Footer -->
+  <footer role="contentinfo">
+    <p>&copy; 2026 4C Systems. All rights reserved.</p>
+    <p>
+      <a href="#privacy" aria-label="View privacy policy">Privacy Policy</a> | 
+      <a href="#terms" aria-label="View terms of service">Terms of Service</a> | 
+      <a href="#contact" aria-label="Contact us">Contact Us</a>
+    </p>
+  </footer>
+
+  <!-- Script for button interactions (optional) -->
+  <script>
+    // Add click handlers for buttons
+    document.querySelectorAll('button').forEach(button => {
+      button.addEventListener('click', function() {
+        console.log('Button clicked:', this.textContent);
+        // Add your custom logic here
+      });
+    });
+
+    // Smooth scroll for anchor links
+    document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+      anchor.addEventListener('click', function(e) {
+        const href = this.getAttribute('href');
+        if (href !== '#' && document.querySelector(href)) {
+          e.preventDefault();
+          document.querySelector(href).scrollIntoView({
+            behavior: 'smooth'
+          });
+        }
+      });
+    });
+  </script>
+</body>
+</html>
